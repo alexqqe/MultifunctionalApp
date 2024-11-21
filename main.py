@@ -2,7 +2,7 @@ import os
 import json
 import datetime
 import csv
-
+from Notes import  notes_menu
 
 def load_data(file_path, default_data):
     if not os.path.exists(file_path):
