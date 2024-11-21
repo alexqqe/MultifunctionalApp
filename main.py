@@ -45,5 +45,19 @@ def main_menu():
         else:
             print('Некорректный выбор. Попробуйте снова.')
 
+def calculator_menu():
+    print('\nКалькулятор')
+    while True:
+        expression = input('Введите выражение для вычисления или "назад" для возврата: ')
+        if expression.lower() == "назад":
+            break
+        try:
+            # Для безопасности можно использовать ast.literal_eval
+            import ast
+            result = eval(expression, {'__builtins__': None}, {})
+            print(f'Результат: {result}')
+        except Exception as e:
+            print(f'Ошибка: {e}')
+
 if __name__ == '__main__':
     main_menu()
