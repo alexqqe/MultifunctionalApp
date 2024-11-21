@@ -5,6 +5,7 @@ import csv
 from Notes import  notes_menu
 from Finance import finance_menu
 from Contacts import contacts_menu
+from Tasks import tasks_menu
 
 def load_data(file_path, default_data):
     if not os.path.exists(file_path):
