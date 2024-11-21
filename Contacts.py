@@ -1,6 +1,5 @@
 import os
 import json
-import datetime
 import csv
 
 def load_data(file_path, default_data):
